@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="A1 Decor India — Interior, decor and furnishing solutions. POP, PVC panels, wall panels, false ceilings and interior design.">
+  <title>A1 Decor India | Interior • Decor • Furnishing</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#101827;--navy2:#18263a;--gold:#caa45d;--gold2:#e8c77f;--ink:#172033;--muted:#657084;--paper:#f7f6f2;--white:#fff;--line:#e8e4dc;--shadow:0 18px 50px rgba(16,24,39,.12)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.container{width:min(1160px,92%);margin:auto}
+    .topbar{background:#0b1220;color:#d6dbe4;font-size:12px;padding:9px 0}.topbar .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    header{position:sticky;top:0;z-index:20;background:rgba(16,24,39,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.1)}
+    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;color:white;min-width:0}.brand img{width:58px;height:58px;object-fit:cover;border-radius:12px;border:1px solid rgba(232,199,127,.65)}.brand strong{display:block;font-size:18px;letter-spacing:.2px}.brand small{display:block;color:#c1c8d3;margin-top:3px;font-size:12px}.navlinks{display:flex;align-items:center;gap:24px;color:#e8ebf0;font-size:13px}.navlinks a:hover{color:var(--gold2)}.navcta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:999px;background:var(--gold);color:#171b22;font-weight:700;border:1px solid var(--gold);transition:.2s;cursor:pointer}.navcta:hover,.btn:hover{background:var(--gold2);transform:translateY(-2px)}.menu{display:none;background:none;border:1px solid #566174;color:white;border-radius:10px;padding:9px 12px;font-size:20px}
+    .hero{position:relative;min-height:620px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,rgba(8,14,25,.94) 0%,rgba(8,14,25,.78) 48%,rgba(8,14,25,.18) 100%),url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=85') center/cover}
+    .hero:after{content:"";position:absolute;inset:auto 0 0;height:5px;background:linear-gradient(90deg,var(--gold),transparent)}.hero-content{position:relative;z-index:1;max-width:690px;padding:85px 0}.eyebrow{color:var(--gold2);font-weight:700;text-transform:uppercase;letter-spacing:3px;font-size:11px}.hero h1{font:600 clamp(42px,6vw,76px)/1.08 "Playfair Display",serif;margin:18px 0}.hero h1 span{color:var(--gold2)}.hero p{color:#d4d9e1;font-size:17px;line-height:1.8;max-width:570px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn.outline{background:transparent;color:white;border-color:rgba(255,255,255,.55)}.hero-note{margin-top:34px;color:#cbd1da;font-size:12px;letter-spacing:1px}
+    .trust{background:#fff;box-shadow:var(--shadow);position:relative;margin-top:-1px}.trustgrid{display:grid;grid-template-columns:repeat(4,1fr);padding:24px 0}.trustitem{text-align:center;border-right:1px solid var(--line);padding:4px 12px}.trustitem:last-child{border:0}.trustitem b{display:block;font:600 23px "Playfair Display";color:var(--navy)}.trustitem span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1.3px}
+    section{padding:88px 0}.section-head{text-align:center;max-width:690px;margin:0 auto 42px}.section-head .eyebrow{color:#a77d35}.section-head h2{font:600 clamp(31px,4vw,46px)/1.15 "Playfair Display";margin:12px 0;color:var(--navy)}.section-head p{color:var(--muted);line-height:1.8;margin:0}
+    .products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.product{background:white;border:1px solid var(--line);border-radius:17px;overflow:hidden;box-shadow:0 8px 28px rgba(18,28,44,.05);transition:.25s}.product:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.product img{height:220px;width:100%;object-fit:cover}.product-body{padding:22px}.product h3{font:600 22px "Playfair Display";margin:0 0 9px;color:var(--navy)}.product p{font-size:13px;line-height:1.7;color:var(--muted);margin:0 0 16px}.textlink{font-size:12px;font-weight:700;color:#9b742f;letter-spacing:.5px;text-transform:uppercase}
+    .about{background:var(--navy);color:white;position:relative;overflow:hidden}.about:before{content:"A1";position:absolute;right:2%;top:-100px;font:700 380px "Playfair Display";color:rgba(255,255,255,.025)}.aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;position:relative}.aboutimg{position:relative}.aboutimg img{width:100%;height:450px;object-fit:cover;border-radius:18px}.goldframe{position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--gold);border-radius:18px;z-index:-1}.about h2{font:600 44px "Playfair Display";margin:12px 0}.about p{color:#c6ced9;line-height:1.9;font-size:14px}.checks{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin:25px 0}.checks span{font-size:13px;color:#f1e6d0}.checks span:before{content:"✦";color:var(--gold2);margin-right:9px}
+    .projects{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:220px 220px;gap:15px}.project{position:relative;border-radius:15px;overflow:hidden;background:#ddd}.project:first-child{grid-row:span 2}.project img{width:100%;height:100%;object-fit:cover;transition:.5s}.project:hover img{transform:scale(1.06)}.project:after{content:"";position:absolute;inset:40% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.72))}.project span{position:absolute;z-index:1;bottom:18px;left:18px;color:white;font:600 20px "Playfair Display"}
+    .why{background:#efede7}.whygrid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.whycard{background:#fff;padding:25px 20px;border-radius:15px;border:1px solid var(--line)}.whycard i{font-style:normal;color:#a77d35;font-size:25px}.whycard h3{font:600 18px "Playfair Display";margin:14px 0 7px}.whycard p{font-size:12px;color:var(--muted);line-height:1.7;margin:0}
+    .cta{background:linear-gradient(110deg,#17243a,#0c1422);color:white;padding:58px 0}.ctainner{display:flex;align-items:center;justify-content:space-between;gap:24px}.cta h2{font:600 34px "Playfair Display";margin:0 0 8px}.cta p{color:#c6ced9;margin:0;font-size:14px}
+    .contactgrid{display:grid;grid-template-columns:.85fr 1.15fr;gap:35px}.contactinfo{background:var(--navy);color:white;border-radius:18px;padding:32px}.contactinfo h3{font:600 27px "Playfair Display";margin:0 0 20px}.contactline{padding:15px 0;border-bottom:1px solid rgba(255,255,255,.12)}.contactline small{display:block;color:#aeb9c8;text-transform:uppercase;letter-spacing:1px;font-size:10px;margin-bottom:6px}.contactline b{font-size:14px;font-weight:500;line-height:1.6}.form{background:white;border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:0 8px 28px rgba(18,28,44,.05)}.form h3{font:600 27px "Playfair Display";margin:0 0 20px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field.full{grid-column:1/-1}.field label{display:block;font-size:11px;font-weight:700;color:#596274;margin-bottom:7px}.field input,.field select,.field textarea{width:100%;border:1px solid #dfe2e7;border-radius:9px;padding:13px;font:14px "DM Sans";outline:none;background:#fff}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold)}.field textarea{min-height:105px;resize:vertical}.form .btn{margin-top:17px;width:100%}.formnote{font-size:11px;color:var(--muted);line-height:1.5;margin-top:10px}
+    footer{background:#080e18;color:#c5ccd6;padding:45px 0 20px}.footgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:30px}.footbrand{display:flex;align-items:center;gap:12px;color:white;font-weight:700;font-size:18px}.footbrand img{width:48px;height:48px;object-fit:cover;border-radius:9px}.footgrid p{font-size:12px;line-height:1.8;color:#aeb7c5}.footgrid h4{color:white;margin:0 0 15px;font-size:13px}.footlinks{display:grid;gap:10px;font-size:12px}.footlinks a:hover{color:var(--gold2)}.copyright{border-top:1px solid #263143;padding-top:18px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:11px;color:#8994a4}
+    .floatwa{position:fixed;right:20px;bottom:20px;z-index:30;background:#20b86a;color:white;padding:14px 18px;border-radius:999px;font-weight:700;box-shadow:0 8px 25px rgba(0,0,0,.22);font-size:13px}.mobilecta{display:none}
+    @media(max-width:850px){.navlinks{display:none;position:absolute;top:82px;left:0;right:0;background:#111c2d;padding:20px 4%;flex-direction:column;align-items:flex-start;gap:18px}.navlinks.open{display:flex}.menu{display:block}.navcta{display:none}.hero{min-height:570px;background-position:58% center}.trustgrid{grid-template-columns:repeat(2,1fr);row-gap:18px}.trustitem:nth-child(2){border:0}.products{grid-template-columns:repeat(2,1fr)}.aboutgrid{grid-template-columns:1fr;gap:38px}.aboutimg img{height:330px}.projects{grid-template-columns:1fr 1fr;grid-template-rows:210px 180px}.project:first-child{grid-row:span 2}.whygrid{grid-template-columns:repeat(2,1fr)}.contactgrid{grid-template-columns:1fr}.footgrid{grid-template-columns:1fr 1fr}.footgrid>div:first-child{grid-column:1/-1}}
+    @media(max-width:560px){.topbar .container{justify-content:center}.nav{height:72px}.brand img{width:48px;height:48px}.brand strong{font-size:15px}.brand small{font-size:10px}.navlinks{top:72px}.hero{min-height:590px}.hero-content{padding:65px 0}.hero h1{font-size:46px}.hero p{font-size:14px}.hero-actions .btn{width:100%}.trustgrid{padding:20px 0}.trustitem b{font-size:20px}.trustitem span{font-size:9px}.trustitem{padding:3px 6px}section{padding:65px 0}.products{grid-template-columns:1fr}.product img{height:220px}.about h2{font-size:36px}.aboutimg img{height:270px}.projects{grid-template-columns:1fr 1fr;grid-template-rows:190px 150px 150px}.project:first-child{grid-column:1/-1;grid-row:auto}.whygrid{gap:10px}.whycard{padding:18px 14px}.ctainner{display:block}.ctainner .btn{margin-top:20px}.cta h2{font-size:29px}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.form,.contactinfo{padding:23px}.footgrid{grid-template-columns:1fr;gap:25px}.footgrid>div:first-child{grid-column:auto}.copyright{justify-content:center;text-align:center}.floatwa{right:12px;bottom:12px;padding:12px 15px}.mobilecta{display:block}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>Premium Interior • Decor • Furnishing Solutions</span><span>All India Enquiries &nbsp; | &nbsp; +91 83035 51398</span></div></div>
+  <header><div class="container nav">
+    <a class="brand" href="#home"><img src="assets/a1-decor-india-logo.jpg" alt="A1 Decor India logo"><span><strong>A1 DECOR INDIA</strong><small>Interior | decor | furnishing</small></span></a>
+    <nav class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#about">About Us</a><a href="#products">Products</a><a href="#projects">Our Projects</a><a href="#contact">Contact</a></nav>
+    <a class="navcta" href="#contact">Get a Quote ↗</a><button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+  </div></header>
+
+  <main>
+    <section class="hero" id="home"><div class="container"><div class="hero-content">
+      <div class="eyebrow">Thoughtful spaces. Timeless style.</div>
+      <h1>Make Your Space<br><span>Beautifully Yours.</span></h1>
+      <p>Discover elegant interior, decor and furnishing solutions — from statement wall panels and stylish ceilings to thoughtful spaces designed around you.</p>
+      <div class="hero-actions"><a class="btn" href="#products">Explore Our Solutions ↗</a><a class="btn outline" href="#contact">Talk to Our Team</a></div>
+      <div class="hero-note">POP DESIGN &nbsp; • &nbsp; PVC PANELS &nbsp; • &nbsp; WALL PANELS &nbsp; • &nbsp; FALSE CEILING &nbsp; • &nbsp; INTERIOR DESIGN</div>
+    </div></div></section>
+
+    <div class="trust"><div class="container trustgrid">
+      <div class="trustitem"><b>Premium</b><span>Design Approach</span></div><div class="trustitem"><b>All India</b><span>Enquiries Welcome</span></div><div class="trustitem"><b>End-to-End</b><span>Customer Support</span></div><div class="trustitem"><b>A1</b><span>Decor Experience</span></div>
+    </div></div>
+
+    <section id="products"><div class="container"><div class="section-head"><div class="eyebrow">Explore our range</div><h2>Solutions That Shape Your Space</h2><p>Bring your ideas to life with decor and furnishing options selected to add character, comfort and functionality to your home or workplace.</p></div>
+      <div class="products">
+        <article class="product"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80" alt="Interior design"><div class="product-body"><h3>Interior Design</h3><p>Coordinated interior concepts that bring together materials, colours, lighting and furniture.</p><a class="textlink" href="#contact">Enquire now ↗</a></div></article>
+        <article class="product"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="PVC wall panel interior"><div class="product-body"><h3>PVC & Wall Panels</h3><p>Decorative wall finishes and panel solutions to create a distinctive feature in your space.</p><a class="textlink" href="#contact">Enquire now ↗</a></div></article>
+        <article class="product"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="False ceiling and living room"><div class="product-body"><h3>False Ceiling & POP</h3><p>Ceiling designs that add depth, style and a polished finish to interiors.</p><a class="textlink" href="#contact">Enquire now ↗</a></div></article>
+        <article class="product"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80" alt="Modular kitchen"><div class="product-body"><h3>Modular Kitchen</h3><p>Practical, well-planned kitchen ideas designed for everyday living and elegant looks.</p><a class="textlink" href="#contact">Enquire now ↗</a></div></article>
+        <article class="product"><img src="https://images.unsplash.com/photo-1615874694520-474822394e73?auto=format&fit=crop&w=900&q=80" alt="Wardrobe and bedroom furniture"><div class="product-body"><h3>Wardrobe & Furniture</h3><p>Storage and furnishing ideas that make better use of space without compromising style.</p><a class="textlink" href="#contact">Enquire now ↗</a></div></article>
+        <article class="product"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80" alt="Decorative panels and modern interior"><div class="product-body"><h3>Louvers & Decorative Panels</h3><p>Modern panel details for feature walls, partitions and selected interior applications.</p><a class="textlink" href="#contact">Enquire now ↗</a></div></article>
+      </div>
+    </div></section>
+
+    <section class="about" id="about"><div class="container aboutgrid">
+      <div class="aboutimg"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85" alt="Elegant modern interior"><div class="goldframe"></div></div>
+      <div><div class="eyebrow">About A1 Decor India</div><h2>Designed Around Your Way of Living.</h2><p>A1 Decor India brings together interior, decor and furnishing solutions to help transform everyday spaces. From POP and false ceiling work to PVC and wall panels, our focus is on helping customers find the right look and practical solution for their requirements.</p><p>Whether you are planning a home refresh, a new room or a complete interior project, share your ideas with us and let’s discuss the possibilities.</p><div class="checks"><span>Interior & decor solutions</span><span>Residential spaces</span><span>Commercial enquiries</span><span>Personalised consultation</span></div><a class="btn" href="#contact">Start Your Project ↗</a></div>
+    </div></section>
+
+    <section id="projects"><div class="container"><div class="section-head"><div class="eyebrow">Ideas & inspiration</div><h2>Spaces Worth Coming Home To</h2><p>A glimpse of interior styles and spaces that can inspire your next project. Replace these sample visuals with your completed project photographs.</p></div>
+      <div class="projects">
+        <div class="project"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=80" alt="Living room project"><span>Living Spaces</span></div>
+        <div class="project"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Kitchen project"><span>Kitchen Ideas</span></div>
+        <div class="project"><img src="https://images.unsplash.com/photo-1615874694520-474822394e73?auto=format&fit=crop&w=800&q=80" alt="Bedroom project"><span>Bedroom Comfort</span></div>
+        <div class="project"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Interior project"><span>Modern Interiors</span></div>
+        <div class="project"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Decor project"><span>Decor Details</span></div>
+      </div>
+    </div></section>
+
+    <section class="why"><div class="container"><div class="section-head"><div class="eyebrow">The A1 difference</div><h2>Why Connect With A1 Decor India?</h2><p>A clear, customer-first approach from the first conversation to planning your space.</p></div>
+      <div class="whygrid">
+        <div class="whycard"><i>✧</i><h3>Thoughtful Design</h3><p>Explore styles and finishes that complement your space and preferences.</p></div>
+        <div class="whycard"><i>⌂</i><h3>Multiple Solutions</h3><p>Interior, POP, PVC panels, wall panels and furnishing enquiries in one place.</p></div>
+        <div class="whycard"><i>♡</i><h3>Personal Attention</h3><p>Discuss your requirements directly with our team for a more tailored approach.</p></div>
+        <div class="whycard"><i>◎</i><h3>Easy Enquiry</h3><p>Reach us by phone or WhatsApp and share details of your upcoming project.</p></div>
+      </div>
+    </div></section>
+
+    <div class="cta"><div class="container ctainner"><div><h2>Have a space in mind?</h2><p>Tell us what you’re planning. We’ll help you take the next step.</p></div><a class="btn" href="#contact">Request a Quote ↗</a></div></div>
+
+    <section id="contact"><div class="container"><div class="section-head"><div class="eyebrow">Let’s talk</div><h2>Make Your Next Project Happen</h2><p>Share a few details and our team can connect with you to discuss your requirements.</p></div>
+      <div class="contactgrid">
+        <div class="contactinfo"><h3>Get in touch</h3>
+          <div class="contactline"><small>Call / WhatsApp</small><b>+91 83035 51398</b></div>
+          <div class="contactline"><small>Instagram</small><b>@A1_decor_india</b></div>
+          <div class="contactline"><small>Business address</small><b>Morba Road, Khandad, Opposite Essar Petrol Pump, Near Alfa Hospital, Mangaon, District Raigad, Maharashtra – 402104</b></div>
+          <div class="contactline"><small>Service coverage</small><b>All India enquiries welcome. Project feasibility and service availability will be confirmed after discussion.</b></div>
+        </div>
+        <form class="form" id="quoteForm"><h3>Request a quote</h3><div class="fields">
+          <div class="field"><label for="name">Your name *</label><input id="name" required placeholder="Enter your name"></div>
+          <div class="field"><label for="phone">Mobile number *</label><input id="phone" required type="tel" inputmode="tel" placeholder="Enter mobile number"></div>
+          <div class="field"><label for="city">City *</label><input id="city" required placeholder="Your city"></div>
+          <div class="field"><label for="product">Interested in</label><select id="product"><option>Interior Design</option><option>PVC / Wall Panels</option><option>POP / False Ceiling</option><option>Modular Kitchen</option><option>Wardrobe / Furniture</option><option>Louvers / Decorative Panels</option><option>Other</option></select></div>
+          <div class="field full"><label for="message">Project details</label><textarea id="message" placeholder="Tell us a little about your requirement..."></textarea></div>
+        </div><button class="btn" type="submit">Send Enquiry on WhatsApp ↗</button><div class="formnote">This form opens WhatsApp with your enquiry details. No information is stored by this demo website.</div></form>
+      </div>
+    </div></section>
+  </main>
+
+  <footer><div class="container"><div class="footgrid">
+    <div><div class="footbrand"><img src="assets/a1-decor-india-logo.jpg" alt=""><span>A1 DECOR INDIA</span></div><p>Interior | decor | furnishing<br>Thoughtful solutions for beautiful spaces. All India enquiries welcome.</p></div>
+    <div><h4>Explore</h4><div class="footlinks"><a href="#about">About Us</a><a href="#products">Products & Services</a><a href="#projects">Our Projects</a><a href="#contact">Get a Quote</a></div></div>
+    <div><h4>Contact</h4><div class="footlinks"><a href="tel:+918303551398">+91 83035 51398</a><a href="https://instagram.com/A1_decor_india" target="_blank" rel="noopener">Instagram: @A1_decor_india</a><a href="#contact">Mangaon, Raigad, Maharashtra</a></div></div>
+  </div><div class="copyright"><span>© <span id="year"></span> A1 Decor India. All rights reserved.</span><span>Interior • Decor • Furnishing</span></div></div></footer>
+  <a class="floatwa" href="https://wa.me/918303551398?text=Hello%20A1%20Decor%20India%2C%20I%20want%20to%20enquire%20about%20your%20services." target="_blank" rel="noopener">● WhatsApp Us</a>
+  <script>
+    const menuBtn=document.getElementById('menuBtn'), nav=document.getElementById('navlinks');
+    menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
+    nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+    document.getElementById('year').textContent=new Date().getFullYear();
+    document.getElementById('quoteForm').addEventListener('submit',e=>{
+      e.preventDefault();
+      const v=id=>document.getElementById(id).value.trim();
+      const msg=`Hello A1 Decor India! I would like to request a quote.%0A%0AName: ${encodeURIComponent(v('name'))}%0AMobile: ${encodeURIComponent(v('phone'))}%0ACity: ${encodeURIComponent(v('city'))}%0AInterested in: ${encodeURIComponent(v('product'))}%0AProject details: ${encodeURIComponent(v('message')||'Not provided')}`;
+      window.open('https://wa.me/918303551398?text='+msg,'_blank','noopener');
+    });
+  </script>
+</body>
+</html>
